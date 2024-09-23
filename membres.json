@@ -1,0 +1,12 @@
+[
+    {
+        "id":,
+        "nom":,
+        "prenom":,
+        "ville":,
+        "lien_github":,
+        "lien_linkedyn":,
+        "hobbies":[],
+        "stacks":[]
+    }
+]
