@@ -4,28 +4,145 @@
 //     })
 // })
 
-const data = [
-    {id: 1, nom: "...", prenom: "...",adress: "123 rue...", github: "lien", Linkedin: "lien", stacks: ""}
-];
-//Compléter avec toutes les informations//
+const tab = [
+ 
+        {
+            id:1,
+            nom:"Lamour",
+            prenom:"Marine",
+            ville:"Boulogne sur Mer",
+            lien_github:"https://github.com/LamourMarine",
+            lien_linkedin:"https://www.linkedin.com/in/marine-lamour-8a1747278/",
+            hobbies:["Randonnée", "lecture"],
+            stacks:["Html","Css"]
+        },
+        {
+            id:2,
+            nom:"Legrand",
+            prenom:"Aledorian",
+            ville:"Boulogne sur Mer",
+            lien_github:"https://github.com/aledorian",
+            lien_linkedin:"https://www.linkedin.com/in/aledorian-legrand/",
+            hobbies:["Jeux vidéo", "Arts"],
+            stacks:["Html","Css","Js","Php"]
+        },
+        {
+            id:3,
+            nom:"Bourtin",
+            prenom:"Florent",
+            ville:"Calais",
+            lien_github:"https://github.com/Florent-Broutin",
+            lien_linkedin:"https://www.linkedin.com/in/florent-broutin-40b651271/",
+            hobbies:["Jeux vidéo", "Informatique"],
+            stacks:["Html","Css","Js"]
+        },
+        {
+            id:4,
+            nom:"Creteur",
+            prenom:"Térence",
+            ville:"Boulogne sur mer",
+            lien_github:"https://github.com/Lembont?",
+            lien_linkedin:"https://www.linkedin.com/in/t%C3%A9rence-cr%C3%A9teur-00aaa81b0/",
+            hobbies:["Ecriture", "musique"],
+            stacks:["Html","Css","Js","C#"]
+        },
+        {
+            id:5,
+            nom:"Charles",
+            prenom:"Julie",
+            ville:"Saint Martin Boulogne",
+            lien_github:"https://github.com/Julie-Charles16",
+            lien_linkedin:"https://www.linkedin.com/in/julie-c-92207a294/",
+            hobbies:["Films", "Séries", "Esthétique"],
+            stacks:["Html","Css"]
+        },
+        {
+            id:6,
+            nom:"Hermant",
+            prenom:"Maxence",
+            ville:"Saint Omer",
+            lien_github:"https://github.com/max-devv",
+            lien_linkedin:"https://www.linkedin.com/in/maxence-hermant-601583328/",
+            hobbies:["MMA", "Jeux vidéo"],
+            stacks:["Html","Css","Js","Lua","Php","Mysql","Node.js"]
+        },
+        {
+            id:7,
+            nom:"Vanherzecke",
+            prenom:"Yohann",
+            ville:"Calais",
+            lien_github:"https://github.com/bannik62",
+            lien_linkedin:"https://www.linkedin.com/in/vanherzecke-yohann-a49587177/",
+            hobbies:["Informatique", "Vélo", "promenade"],
+            stacks:["Html","Css","Js"]
+        },
+        {
+            id:8,
+            nom:"Dupont",
+            prenom:"Grégoire",
+            ville:"Condette",
+            lien_github:"https://github.com/RetroGreg",
+            lien_linkedin:"https://www.linkedin.com/in/gr%C3%A9goire-dupont-801355328/",
+            hobbies:["Informatique", "Jeux vidéo", "Arts créatifs"],
+            stacks:["Html","Css","Js","C#"]
+        },
+        {
+            id:9,
+            nom:"Eeckman",
+            prenom:"Perrine",
+            ville:"Boulogne sur mer",
+            lien_github:"?",
+            lien_linkedin:"?",
+            hobbies:["Cause animale", "Environnement"],
+            stacks:["Html","Css"]
+        },    
+        {
+            id:10,
+            nom:"Lesaffre",
+            prenom:"Maryline",
+            ville:"Le Portel",
+            lien_github:"https://github.com/Marylinelesaffre",
+            lien_linkedin:"https://www.linkedin.com/in/maryline-lesaffre/",
+            hobbies:["Dessin", "Jeux vidéo"],
+            stacks:["Html","Css"]
 
-const svg = document.querySelector('svg');
-const infoBox = document.getElementById('info');
+        }
+    ];
 
-data.map (person => {
-    const circle= document.createElementNS("http://www.w3.org/2000/svg","circle");
-    circle.setAttribute("cx", person.position.x); // Position x
-    circle.setAttribute("cy", person.position.y); // Position y
-    circle.setAttribute("r", 8); // Rayon
-    circle.setAttribute("class", "marker");
-    circle.setAttribute("data-id", person.id); // Stocker l'ID de la personne
+    //conteneur où les cartes seront affichées//
+    const container = document.getElementById('card-container');
 
-    circle.addEventListener('click', (event) => {
-        showPersonInfo(person);
-      });
 
-    svg.appendChild(circle);
+    // Ajoute les pounts cliquable sur la carte//
+    const points = document.querySelectorAll('.point');
+points.forEach(point => {
+    point.addEventListener('click', () => {
+        const id = parseInt(point.getAttribute('data-id'));
+        showCard(id);
+    });
 });
+
+
+//Affiche la carte correspondante selon l'ID //
+function showCard(id) {
+    const person = tab.find(p => p.id === id);
+    if (person) {
+        container.innerHTML = `
+            <div class="card" id="card-${person.id}">
+              <h2>${person.prenom} ${person.nom}</h2>
+              <p><strong>Ville :</strong> ${person.ville}</p>
+              <p><strong>GitHub :</strong> <a href="${person.lien_github}" target="_blank">${person.lien_github}</a></p>
+              <p><strong>LinkedIn :</strong> <a href="${person.lien_linkedin}" target="_blank">${person.lien_linkedin}</a></p>
+              <p><strong>Hobbies :</strong> ${person.hobbies.join(", ")}</p>
+              <p><strong>Stacks :</strong> ${person.stacks.join(", ")}</p>
+            </div>
+        `;
+        container.style.display = 'flex'; // Afficher le conteneur des cartes
+    }
+}
+
+
+
 
 
 
