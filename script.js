@@ -101,6 +101,56 @@
         stacks:["Html","Css"]
 
     }
+    {
+        id:11,
+        nom:"Bourgeois",
+        prenom:"Philippe",
+        ville:"Boulogne sur mer",
+        lien_github:"https://github.com/Pbourgeois62",
+        lien_linkedyn:"https://www.linkedin.com/in/philippe-bourgeois-76662723b/",
+        hobbies:["Randonnée", "Musique"],
+        stacks:["Html","Css","Mysql","Symfony"]
+    },
+    {
+        id:12,
+        nom:"Dierman",
+        prenom:"Sacha",
+        ville:"Audresselles",
+        lien_github:"https://github.com/Pbourgeois62",
+        lien_linkedyn:"https://www.linkedin.com/in/philippe-bourgeois-76662723b/",
+        hobbies:["Techno - Hard musique", "Sport"],
+        stacks:["Html","Css"]
+    },   
+    {
+        id:13,
+        nom:"Herbez",
+        prenom:"Nicolas",
+        ville:"Samer",
+        lien_github:"https://github.com/nicolas-herbez",
+        lien_linkedyn:"https://www.linkedin.com/search/results/all/?keywords=nicolas%20herbez&origin=GLOBAL_SEARCH_HEADER&sid=%40YJ",
+        hobbies:["Apprenants","Coder","Famille"],
+        stacks:["Symfony","Angular","Docker"]
+    },
+    {
+        id:14,
+        nom:"Cottrez",
+        prenom:"Rémy",
+        ville:"Arques",
+        lien_github:"https://github.com/RemyCTRZ",
+        lien_linkedyn:"https://www.linkedin.com/in/remyco/",
+        hobbies:["Jeux vidéo","Cinéma","Séries","Coder"],
+        stacks:["NextJS","NodeJS","React","MysSQL","PostgreSQL","MongoDB","Swagger"]
+    },
+    {
+        id:15,
+        nom:"Barsby",
+        prenom:"Laurie",
+        ville:"Calais",
+        lien_github:"Non renseigné",
+        lien_linkedyn:"https://www.linkedin.com/in/barsby-laurie-62100/",
+        hobbies:["Cuisine","photographie"],
+        stacks:["Non renseigné"]
+    }
 ];
     const pin = document.querySelector('points');
     const aside = document.querySelector('aside');
@@ -111,5 +161,3 @@
 
 
     const svg = document.querySelector('svg')
-    const tab = tab.map((element.id)) => 
- 
