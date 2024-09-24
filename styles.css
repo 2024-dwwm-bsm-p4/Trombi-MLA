@@ -14,7 +14,7 @@ body {
     background-size: cover;
 }
 aside {
-    display: none;
+    /* display: none; */
     .card {       
         position: absolute;
         top: 50px;
@@ -45,11 +45,21 @@ aside {
         }
 
         .networks {
+            /* font-size: 1.4em; */
             padding-top: 20px;
             display: flex;
-            justify-content: space-around;            
+            justify-content: space-around;
+            svg{
+                font-size: 50px;
+                font-size: 2em;
+            }
+            a{
+                font-size: 2em;
+                font-size: 50px
+            }           
         }
     }
+
 h1 {
     background-color:white;
     padding:5px;
@@ -61,7 +71,7 @@ h1 {
 }
 
 svg {
-    max-height: 50px;
+    font-size: 1.2em;
 }
 
 #pin-philippe {
