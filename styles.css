@@ -15,10 +15,11 @@ body {
 }
 
 aside {
-    /* display: none; */
+    display: none;
     /* min-height: 250px;
     max-height: 400px; */
     .card {
+        
         position: absolute;
         top: 50px;
         right: 50px;
@@ -26,9 +27,7 @@ aside {
         padding: 20px;
         border-radius: 8px;
         border: solid black;
-        width: auto;
-        min-height: 250px;
-        
+        width:350px;       
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -81,8 +80,8 @@ svg {
     position: absolute;
     height: 50px;
     width: auto;
-    top: 200px;
-    left: 60px;
+    top: 180px;
+    left:120px;
 
 }
 
