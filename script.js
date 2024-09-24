@@ -2,7 +2,7 @@ const tab = [
  
     {
         id:"point1",
-        image:"images/chat",
+        image:"images/marine.jpg",
         nom:"Lamour",
         prenom:"Marine",
         ville:"Boulogne sur Mer",
@@ -13,7 +13,7 @@ const tab = [
     },
     {
         id:"point2",
-        image:"images/chat",
+        image:"images/aledorian.jpg",
         nom:"Legrand",
         prenom:"Aledorian",
         ville:"Boulogne sur Mer",
@@ -24,7 +24,7 @@ const tab = [
     },
     {
         id:"point3",
-        image:"images/florent",
+        image:"images/florent.webp",
         nom:"Bourtin",
         prenom:"Florent",
         ville:"Calais",
@@ -35,7 +35,7 @@ const tab = [
     },
     {
         id:"point4",
-        image:"images/chat",
+        image:"images/térence.webp",
         nom:"Creteur",
         prenom:"Térence",
         ville:"Boulogne sur mer",
@@ -46,7 +46,7 @@ const tab = [
     },
     {
         id:"point5",
-        image:"images/chat",
+        image:"images/julie.png",
         nom:"Charles",
         prenom:"Julie",
         ville:"Saint Martin Boulogne",
@@ -57,7 +57,7 @@ const tab = [
     },
     {
         id:"point6",
-        image:"images/chat",
+        image:"images/maxence.webp",
         nom:"Hermant",
         prenom:"Maxence",
         ville:"Saint Omer",
@@ -68,7 +68,7 @@ const tab = [
     },
     {
         id:"point7",
-        image:"images/chat",
+        image:"images/yohann.jfif",
         nom:"Vanherzecke",
         prenom:"Yohann",
         ville:"Calais",
@@ -79,7 +79,7 @@ const tab = [
     },
     {
         id:"point8",
-        image:"images/chat",
+        image:"images/grégoire.webp",
         nom:"Dupont",
         prenom:"Grégoire",
         ville:"Condette",
@@ -90,7 +90,7 @@ const tab = [
     },
     {
         id:"point9",
-        image:"images/chat",
+        image:"images/perrine.jpeg",
         nom:"Eeckman",
         prenom:"Perrine",
         ville:"Boulogne sur mer",
@@ -101,7 +101,7 @@ const tab = [
     },    
     {
         id:"point10",
-        image:"images/chat",
+        image:"images/maryline.webp",
         nom:"Lesaffre",
         prenom:"Maryline",
         ville:"Le Portel",
@@ -113,7 +113,7 @@ const tab = [
     },
     {
         id:"point11",
-        image:"images/chat",
+        image:"images/philippe.webp",
         nom:"Bourgeois",
         prenom:"Philippe",
         ville:"Boulogne sur mer",
@@ -135,7 +135,7 @@ const tab = [
     },   
     {
         id:"point13",
-        image:"images/chat",
+        image:"images/nicolas.jpeg",
         nom:"Herbez",
         prenom:"Nicolas",
         ville:"Samer",
@@ -146,7 +146,7 @@ const tab = [
     },
     {
         id:"point14",
-        image:"images/chat",
+        image:"images/remy.jpeg",
         nom:"Cottrez",
         prenom:"Rémy",
         ville:"Arques",
@@ -157,7 +157,7 @@ const tab = [
     },
     {
         id:"point15",
-        image:"images/chat",
+        image:"images/laurie.jpg",
         nom:"Barsby",
         prenom:"Laurie",
         ville:"Calais",

@@ -15,8 +15,9 @@ body {
 }
 
 aside {
-
     /* display: none; */
+    /* min-height: 250px;
+    max-height: 400px; */
     .card {
         position: absolute;
         top: 50px;
@@ -27,9 +28,15 @@ aside {
         border: solid black;
         width: auto;
         min-height: 250px;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
+        #card-image{
+            height:300px;
+            width: 300px;
+        }
     }
 
     ul {
@@ -86,7 +93,6 @@ svg {
     width: auto;
     top: 230px;
     left: 65px;
-
 }
 
 #point3 {
